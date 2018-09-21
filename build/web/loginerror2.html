@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>用户登录</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body{background-image:url(img/2a.jpg);}
+        </style>
+        <div id="log">
+        </div>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script>
+            function check() {
+                if (form1.user.value == "")
+                {
+                    alert("用户名不能为空");
+                    return false;
+                } else if (form1.password.value == "")
+                {
+                    alert("密码为空！");
+                    return false;
+                } else
+                {
+                    return true;
+                }
+            }
+        </script>
+    </head> 
+    <body>
+    <center>
+        <h3><font color='red'>用户名或密码错误，请重新登录</font></h3>
+        <h1>燕山大学教室管理系统</h1>
+        <br>
+        <br>
+        <h2>用户登录</h2>
+        <form name="form1" action="login" method="post" onSubmit="return check()">
+            账&nbsp号：<input type="text" name="user"><br>
+            密&nbsp码：<input type="password" name="password"><p>
+                <input type="radio" name="power" value="student">学生
+                <input type="radio" name="power" value="teacher">教师
+            <input type="radio" name="power" value="admin">管理员<p></p>
+            <input type="submit" name="sub" value="登录">
+        </form>
+    </center>
+
+    <div id="footer">
+      <div id="foot">
+        <ul>
+          <li>
+            <img class="copyrightimg" height="36" width="140" src="./f2.gif">
+            <img height="36" width="1" src="./f3.gif">
+          </li>
+          <li style="margin-top:5px;margin-left:10px">
+            河北省秦皇岛市河北大街西段438号  TEL:+86-335-8057100  邮编：066004<br>Copyright
+            <font face="Times New Roman,Arial,Helvetica,sans-serif;">©</font>2010 技术服务与支持：燕山大学信息技术中心 冀ICP备05023975号-1 
+          </li>
+        </ul>
+      </div>
+    </div>   
+</body>
+</html>

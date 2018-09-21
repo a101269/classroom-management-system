@@ -1,0 +1,135 @@
+#log{
+  background: url(./toubu.jpg) no-repeat scroll 50% bottom;
+    clear: both;
+    height: 93px;
+}
+
+
+.footer {
+  text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.header{
+  text-align: center;
+  font-size: 200%;
+}
+
+.error {
+  font-weight: bold;
+  color: #FF0000;
+}
+
+.login {
+  font-style: italic;
+}
+
+form label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+
+td.label {
+  font-weight: bold;
+}
+
+img.profile {
+  vertical-align: top;
+}
+a:hover{
+        color: red;
+      }
+
+body{
+  background:;
+}
+
+
+#footer{
+  background-color: #f2f2f2;
+  border-width: 1px 1px 3px;
+    clear: both;
+    height: 55px;
+    text-align: center;
+    width: 100%;
+    border-style: solid  none none none;
+    margin-top: 500px;
+}
+
+#foot{
+  margin: 0 auto;
+    overflow: hidden;
+    width: 800px;
+}
+
+#foot ul{
+  display: block;
+    
+}
+
+#foot ul li{
+  color: #999999;
+    float: left;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.copyrightimg {
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.nav_login{
+  text-align: center;
+      margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 5px;
+        font-size: 13px;
+    line-height: 20px;
+}
+
+.login_zc{
+  text-align: center;
+}
+
+#nav_father{
+  background: #fff url(./nav_on.jpg);
+}
+
+#nav{
+  height: 34px;
+  margin: 0 auto;
+  font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    width: 1020px;
+}
+
+#nav li{
+  float: left;
+  width: 100px;
+  margin-right: 1px;
+}
+
+#nav a{
+  display: block;
+  font-size: 14px;
+  font-family: '宋体';
+  color: #4b4b4c;
+  padding: 7px 8px 5px;
+  margin: 0 1px 1px 0;
+  text-decoration: none;
+}
+
+#nav a:hover{
+  color: white;
+  background: url(./nav_over.png);
+}
+
+.main1{
+  margin: 10px 0;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body{background-image:url(img/2a.jpg);}
+        </style>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <div id="log">
+        </div>
+        <script>
+        function checkname()
+        {
+            var username = f.username.value;
+            if(username=="")
+            {
+		alert("请输入用户名");
+            }
+            else
+            {
+                //打开一个窗口,同时向check.action发送请求
+                window.open("checkname.jsp?username="+encodeURI(username),"check","menubar=no,height=300,width=400,left=300,top=80");
+            }
+        }
+        function check()
+        {   
+            if(f.username.value=="")
+            {
+            alert("用户名不能为空");
+            return false;
+            }
+            else if(f.password.value=="" || f.password.value!=f.password1.value)
+            {
+                alert("密码为空或两次密码不一致！");
+                return false;
+            }else
+            {
+                return true;
+            }
+        }
+        </script>
+    </head>
+    <body>
+<center>
+<h1>用户注册</h1>
+<hr>
+<form name="f" method="post" action="register.jsp" onSubmit="return check()">
+<table>
+<tr><td align="center">学号：<td><input type="text" name="username"><td><a href="javaScript:checkname()">检查学号是否已注册</a>
+<tr><td align="center">姓名：<td><input type="text" name="truename">       
+<tr><td align="center">密码：<td><input type="password" name="password">
+<tr><td align="center">密码确认：<td><input type="password" name="password1">
+</table>
+<input type="submit" value="注册">
+<input type="reset" value="重置">
+</form>
+</center>  
+    <div id="footer">
+      <div id="foot">
+        <ul>
+          <li>
+            <img class="copyrightimg" height="36" width="140" src="./f2.gif">
+            <img height="36" width="1" src="./f3.gif">
+          </li>
+          <li style="margin-top:5px;margin-left:10px">
+            河北省秦皇岛市河北大街西段438号  TEL:+86-335-8057100  邮编：066004<br>Copyright
+            <font face="Times New Roman,Arial,Helvetica,sans-serif;">©</font>2010 技术服务与支持：燕山大学信息技术中心 冀ICP备05023975号-1 
+          </li>
+        </ul>
+      </div>
+    </div>   
+    </body>
+</html>
